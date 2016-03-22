@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="page-header">
+        <h1>All Things</h1>
+    </div>
+    <ol class="breadcrumb">
+        <li class="active">Things</li>
+    </ol>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="list-group">
+                <% for (var i = 0; i < data.length; i++) { %>
+                    <a href="/things/<%=data[i].id%>" class="list-group-item"><%- data[i].name %></a>
+                <% } %>
+            </div>
+            <form method="POST" action="/things">
+                <div class="input-group">
+                    <input name="name" type="text" class="form-control" placeholder="Add a thing...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit">Go!</button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

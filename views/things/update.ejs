@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="page-header">
+        <h1>Updated a Thing</h1>
+    </div>
+    <ol class="breadcrumb">
+        <li><a href="/things">Things</a></li>
+        <li><a href="/things/<%= data.id %>"><%= data.name %></a></li>
+        <li class="active">Update</li>
+    </ol>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="alert alert-info" role="alert">
+                The thing "<%= data.name %>" was UPDATED successfully!
+            </div>
+        </div>
+    </div>
+</div>

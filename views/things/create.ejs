@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="page-header">
+        <h1>Created a Thing</h1>
+    </div>
+    <ol class="breadcrumb">
+        <li><a href="/things">Things</a></li>
+        <li><a href="/things/<%= data.id %>"><%= data.name %></a></li>
+        <li class="active">Create</li>
+    </ol>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="alert alert-success" role="alert">
+                The thing "<%= data.name %>" was CREATED successfully!
+            </div>
+        </div>
+    </div>
+</div>
